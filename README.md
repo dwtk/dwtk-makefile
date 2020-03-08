@@ -12,4 +12,4 @@ The example `dwtk-config-local.example.mk` local configuration file is also usef
 
 ## Usage examples
 
-There's a very simple example in the `examples/` folder. The [`dwtk-ice`](https://github.com/dwtk/dwtk-ice) firmware is also a good example.
+There's a very simple example in the `example/` folder. The [`dwtk-ice`](https://github.com/dwtk/dwtk-ice) firmware is also a good example.
