@@ -8,7 +8,7 @@
 
 # This is an example configuration. Please check the datasheet of your
 # microcontroller and fill the options carefully before uncommenting each
-# of them
+# of them.
 
 ### Main settings
 
@@ -17,7 +17,7 @@
 
 # The frequency of the AVR microcontroller. Must match the actual operating
 # clock of the microcontroller, otherwise the delay functions won't work as
-# expected
+# expected.
 #AVR_F_CPU ?= 8000000UL
 
 
@@ -35,8 +35,7 @@
 
 # Lock bits. Used to prevent further programming and verification of the chip.
 # After programming such bits, it may be necessary to erase the chip to
-# unprogram them. Usually not changed. It is safe to keep this commented
-# out.
+# unprogram them. Usually not changed. It is safe to keep this commented out.
 #AVR_LOCK ?= 0xFF
 
 

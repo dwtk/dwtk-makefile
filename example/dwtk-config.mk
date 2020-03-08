@@ -13,7 +13,7 @@ AVR_MCU ?= attiny25
 
 # The frequency of the AVR microcontroller. Must match the actual operating
 # clock of the microcontroller, otherwise the delay functions won't work as
-# expected
+# expected.
 AVR_F_CPU ?= 8000000UL
 
 
@@ -31,8 +31,7 @@ AVR_HFUSE ?= 0xDF
 
 # Lock bits. Used to prevent further programming and verification of the chip.
 # After programming such bits, it may be necessary to erase the chip to
-# unprogram them. Usually not changed. It is safe to keep this commented
-# out.
+# unprogram them. Usually not changed. It is safe to keep this commented out.
 #AVR_LOCK ?= 0xFF
 
 
