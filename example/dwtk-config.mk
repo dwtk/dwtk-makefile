@@ -43,7 +43,7 @@ AVR_HFUSE ?= 0xDF
 # Firmware CFLAGS. The CFLAGS needed to build the firmware. Usually contains
 # include paths and gcc arguments to disable warnings. The Makefile converts
 # any warnings into compilation errors. If some warning must be ignored, the
-# specific gcc argument.
+# specific gcc argument that disables the warning must be added here.
 #FIRMWARE_CFLAGS =
 
 # Firmware sources. The source files (C), that should be built into the
