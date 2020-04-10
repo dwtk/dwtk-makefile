@@ -38,7 +38,7 @@ endif
 
 CFLAGS = \
 	-std=gnu99 \
-	-mmcu=$(AVR_MCU) \
+	-mmcu="$(AVR_MCU)" \
 	$(OPTIMIZATION) \
 	-ggdb \
 	-funsigned-char \
@@ -50,12 +50,12 @@ CFLAGS = \
 	$(NULL)
 
 ifdef AVR_F_CPU
-CFLAGS += -DF_CPU=$(AVR_F_CPU)
+CFLAGS += -DF_CPU="$(AVR_F_CPU)"
 endif
 
 DWTK_CMD = $(DWTK)
 ifdef DWTK_SERIAL
-DWTK_CMD += -s $(DWTK_SERIAL)
+DWTK_CMD += -s "$(DWTK_SERIAL)"
 endif
 ifdef DWTK_DEBUG
 DWTK_CMD += -d
