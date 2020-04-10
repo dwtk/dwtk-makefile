@@ -54,6 +54,9 @@ CFLAGS += -DF_CPU="$(AVR_F_CPU)"
 endif
 
 DWTK_CMD = $(DWTK)
+ifdef DWTK_ICE
+DWTK_CMD += -i "$(DWTK_ICE)"
+endif
 ifdef DWTK_SERIAL
 DWTK_CMD += -s "$(DWTK_SERIAL)"
 endif

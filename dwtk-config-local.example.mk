@@ -15,9 +15,15 @@
 # Enable dwtk debug flag (verbose logging of operations).
 #DWTK_DEBUG = 1
 
-# When using USB-To-TTL devices, configure the serial port device. When
-# setting this, any dwtk-ice device plugged is ignored.
+# When using dwtk-ice, configure its serial number. The serial number can be
+# found using `dmesg` or some USB listing tool. This is required when more
+# than one dwtk-ice device is plugged in.
+#DWTK_ICE = deadbeef
+
+# When using USB-to-TTL devices, configure the serial port device. This is
+# required when more than one USB-to-TTL device is plugged in.
 #DWTK_SERIAL = /dev/ttyUSB0
 
 # Build firmware for release (with optimizations, without debug helpers).
+# Setting to 0 will force a debug build.
 #AVR_RELEASE = 1
